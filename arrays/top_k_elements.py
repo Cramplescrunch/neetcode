@@ -13,6 +13,7 @@ class Solution(object):
                 countMap[num] += 1
             else:
                 countMap[num] = 1
+        print(countMap)
         countMapTops = sorted(countMap.items(), key=lambda item: item[1], reverse=True)
         result = []
         for val in countMapTops:
